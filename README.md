@@ -23,4 +23,4 @@ The package development version is tested on windows. The developmental version 
 - CUDA 11.3
 - cuDnn 8.2
 
-# Getting started
+# Demo
