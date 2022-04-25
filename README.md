@@ -48,7 +48,6 @@ Intermediate training results are saved in './args.result_root/mnist_MODE_NUM_DE
 |:--:|:--:|
 | ![iter100.png](/images/iter100.png)|![iter100.png](/images/iter100.png)|  
 | *Iteration 10000* | *Iteration 20000* | 
-|:--:|:--:|
 | ![iter100.png](/images/iter100.png)|![iter100.png](/images/iter100.png)|
   
 ## Testing
