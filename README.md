@@ -10,7 +10,9 @@ Holographic image reconstruction ~
 The following libraries are necessary for running the codes.
 - Python >= 3.7
 - Pytorch >= 1.10.2
-- numpy, PIL, matplotlib
+- numpy
+- PIL
+- matplotlib
 
 Please install requirements using below command.
 ```
@@ -24,3 +26,24 @@ The package development version is tested on windows. The developmental version 
 - cuDnn 8.2
 
 # Demo
+## Clone
+```
+git clone https://github.com/csleemooo/Physics_informed_unsupervised_deep_learning_for_adaptive_holographic_imaging
+```
+
+## Training
+Train model with **MNIST** dataset.
+num_depth: 1 or 5 (1 for single depth measurement, 5 for multiple depth measurements)
+mode: phase, amplitude, complex_amplitude
+result_root: trained parameters and intermediate training results are saved.
+```
+python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_root RESULT_PATH --mode complex_amplitude
+```
+
+## Testing
+Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset.
+Trained parameters can be downloaded from ~
+data: mnist, polystyrene_bead, tissue_array, red_blood_cell
+'''
+python train.py --data_name mnist --num_depth 5 --result_root RESULT_PATH
+'''
