@@ -32,18 +32,18 @@ git clone https://github.com/csleemooo/Physics_informed_unsupervised_deep_learni
 ```
 
 ## Training
-Train model with **MNIST** dataset.
-num_depth: 1 or 5 (1 for single depth measurement, 5 for multiple depth measurements)
-mode: phase, amplitude, complex_amplitude
-result_root: trained parameters and intermediate training results are saved.
+Train model with **MNIST** dataset.  
+num_depth: 1 or 5 (1 for single depth measurement, 5 for multiple depth measurements)  
+mode: phase, amplitude, complex_amplitude  
+result_root: trained parameters and intermediate training results are saved.  
 ```
 python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_root RESULT_PATH --mode complex_amplitude
 ```
 
 ## Testing
-Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset.
-Trained parameters can be downloaded from ~
-data: mnist, polystyrene_bead, tissue_array, red_blood_cell
+Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset.  
+Trained parameters can be downloaded from ~  
+data: mnist, polystyrene_bead, tissue_array, red_blood_cell  
 '''
 python train.py --data_name mnist --num_depth 5 --result_root RESULT_PATH
 '''
