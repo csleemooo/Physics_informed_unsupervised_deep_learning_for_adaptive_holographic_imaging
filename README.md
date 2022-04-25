@@ -37,7 +37,7 @@ Train model with **MNIST** dataset.
 - num_depth: 1 or 5 (1 for single depth measurement, 5 for multiple depth measurements)  
 - mode: phase, amplitude, complex_amplitude  
 - result_root: The root where trained parameters and intermediate training results are saved.  
-- others: Other parameters (e.g. regularization constant, batch mode, batch size, iterations, and etc) can be modified. See ./model/Initialization.py.
+- Others: Other parameters (e.g. regularization constant, batch mode, batch size, iterations, and etc) can be modified. See ./model/Initialization.py. Also, distance range and the number of distance can be set by users. See train.py.
 ```
 python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_root RESULT_PATH --mode complex_amplitude
 ```
