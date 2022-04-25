@@ -44,7 +44,7 @@ python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_r
 
 ### Example of training result
 
-<img src=./images/iter100.png width="200">
+<img src=./images/iter100.png width="500">
 
 ## Testing
 Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset.  
