@@ -10,9 +10,7 @@ Holographic image reconstruction ~
 The following libraries are necessary for running the codes.
 - Python >= 3.7
 - Pytorch >= 1.10.2
-- numpy
-- PIL
-- matplotlib
+- numpy, PIL, matplotlib
 
 Please install requirements using below command.
 ```
