@@ -23,6 +23,7 @@ Please install requirements using below command.
 ```
 pip install -r requirements.txt
 ```
+which should install in about few minutes.
 
 ## Environements
 The package development version is tested on windows. The developmental version of the package has been tested on the following systems and drivers.
