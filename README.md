@@ -49,7 +49,15 @@ python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_r
 Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset.  
 Trained parameters can be downloaded from https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.  
 
-data: mnist, polystyrene_bead, tissue_array, red_blood_cell  
+### Test with MNIST
+data_name: mnist
 ```
-python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH
+python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH --mode complex_amplitude
+```
+
+### Test with experimental dataset
+data_name: polystyrene_bead (num_depth: 1 or 6), tissue_array, or red_blood_cell
+```
+python test.py --data_name polystyrene_bead --num_depth 6 --result_root RESULT_PATH
+python test.py --data_name tissue_array --result_root RESULT_PATH
 ```
