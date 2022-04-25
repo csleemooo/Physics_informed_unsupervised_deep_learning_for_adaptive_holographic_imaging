@@ -42,10 +42,14 @@ others: Other parameters (e.g. regularization constant, batch mode, batch size, 
 python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_root RESULT_PATH --mode complex_amplitude
 ```
 
+### Example of training result
+
+
 ## Testing
 Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset.  
-Trained parameters can be downloaded from ~  
+Trained parameters can be downloaded from https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.  
+
 data: mnist, polystyrene_bead, tissue_array, red_blood_cell  
 '''
-python train.py --data_name mnist --num_depth 5 --result_root RESULT_PATH
+python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH
 '''
