@@ -3,7 +3,8 @@
 We provied pytorch(python) and matlab implementations of **Physics-informed unsupervised deep learning for adaptive holographic imaging**. This code was written by **Chanseok Lee**.
 
 # Overview
-Holographic image reconstruction ~
+In optical imaging, image retrieval process often relies on inverse mapping between a measurement domain and an object domain. Deep learning methods have recently been shown to provide a fast and accurate framework to learn the inverse mapping. However, because the learning process solely depends on the statistical distribution of matched reference data, the reliability is in general compromised in practical imaging configurations where physical perturbations exist in various forms, such as mechanical movement and optical fluctuation. Here, in a holographic imaging scheme, we present a physics-informed unsupervised deep learning method that incorporates a parameterized forward physics model to render the adaptability in the inverse mapping even without any matched reference data for training. We show that both the morphology and the range of objects can be reconstructed under highly perturbative configurations where the object-to-sensor distance is set beyond the range of a given training data set. To prove the reliability of the proposed method in practical biomedical applications, we further demonstrate holographic imaging of red blood cells flowing in a cluster and diverse types of tissue sections presented without any ground truth data. Our results suggest that the physics-informed unsupervised approach effectively extends the adaptability of deep learning methods, and therefore, has great potential for solving a wide range of inverse problems in optical imaging techniques.
+
 
 # System Requirements
 ## Clone
