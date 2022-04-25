@@ -73,3 +73,6 @@ data_name: polystyrene_bead (num_depth: 1 or 6), tissue_array, or red_blood_cell
 python test.py --data_name polystyrene_bead --num_depth 6 --result_root RESULT_PATH
 python test.py --data_name tissue_array --result_root RESULT_PATH
 ```
+
+## Reproduce
+Below commands reproduce the reported results.
