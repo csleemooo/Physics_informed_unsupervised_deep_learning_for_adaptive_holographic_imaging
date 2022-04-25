@@ -34,9 +34,9 @@ git clone https://github.com/csleemooo/Physics_informed_unsupervised_deep_learni
 ## Training
 Train model with **MNIST** dataset.  
 ### Parameter description  
-num_depth: 1 or 5 (1 for single depth measurement, 5 for multiple depth measurements)  
-mode: phase, amplitude, complex_amplitude  
-result_root: The root where trained parameters and intermediate training results are saved.  
+- num_depth: 1 or 5 (1 for single depth measurement, 5 for multiple depth measurements)  
+- mode: phase, amplitude, complex_amplitude  
+- result_root: The root where trained parameters and intermediate training results are saved.  
 others: Other parameters (e.g. regularization constant, batch mode, batch size, iterations, and etc) can be modified. See ./model/Initialization.py.
 ```
 python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_root RESULT_PATH --mode complex_amplitude
