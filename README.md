@@ -2,7 +2,11 @@
 
 We provied pytorch(python) and matlab implementations of **Physics-informed unsupervised deep learning for adaptive holographic imaging**. This code was written by **Chanseok Lee**.
 
-## Requirements
+# Overview
+Holographic image reconstruction ~
+
+# System Requirements
+## Packages
 The following libraries are necessary for running the codes.
 - Python >= 3.7
 - Pytorch >= 1.10.2
@@ -20,3 +24,5 @@ The package development version is tested on windows. The developmental version 
 - Windows 10
 - CUDA 11.3
 - cuDnn 8.2
+
+# Getting started
