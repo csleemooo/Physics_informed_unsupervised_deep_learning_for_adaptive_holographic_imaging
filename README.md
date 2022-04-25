@@ -43,7 +43,7 @@ python train.py --data_name mnist --num_depth 5 --data_root DATA_PATH --result_r
 ```
 
 ### Example of training result
-Intermediate training results are saved in './args.result_root/mnist_MODE_NUM_DEPTH/'. Example images are as follows
+Intermediate training results are saved in './args.result_root/mnist_MODE_NUM_DEPTH/'. Example images are as follows.  
 <img src=./images/iter100.png width="600", alt="Iteration 100"> <img src=./images/iter100.png width="600", alt="Iteration 5000">  
 <img src=./images/iter100.png width="600", alt="Iteration 10000"> <img src=./images/iter100.png width="600", alt="Iteration 20000">  
 ## Testing
