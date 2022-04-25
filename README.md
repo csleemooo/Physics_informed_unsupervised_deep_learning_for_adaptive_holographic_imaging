@@ -6,6 +6,11 @@ We provied pytorch(python) and matlab implementations of **Physics-informed unsu
 Holographic image reconstruction ~
 
 # System Requirements
+## Clone
+```
+git clone https://github.com/csleemooo/Physics_informed_unsupervised_deep_learning_for_adaptive_holographic_imaging
+```
+
 ## Packages
 The following libraries are necessary for running the codes.
 - Python >= 3.7
@@ -26,11 +31,6 @@ The package development version is tested on windows. The developmental version 
 - cuDnn 8.2
 
 # Demo
-## Clone
-```
-git clone https://github.com/csleemooo/Physics_informed_unsupervised_deep_learning_for_adaptive_holographic_imaging
-```
-
 ## Training
 Train model with **MNIST** dataset.  
 ### Parameter description  
