@@ -5,7 +5,7 @@ We provied pytorch(python) and matlab implementations of **Physics-informed unsu
 # Overview
 In optical imaging, image retrieval process often relies on inverse mapping between a measurement domain and an object domain. Deep learning methods have recently been shown to provide a fast and accurate framework to learn the inverse mapping. However, because the learning process solely depends on the statistical distribution of matched reference data, the reliability is in general compromised in practical imaging configurations where physical perturbations exist in various forms, such as mechanical movement and optical fluctuation. Here, in a holographic imaging scheme, we present a physics-informed unsupervised deep learning method that incorporates a parameterized forward physics model to render the adaptability in the inverse mapping even without any matched reference data for training. We show that both the morphology and the range of objects can be reconstructed under highly perturbative configurations where the object-to-sensor distance is set beyond the range of a given training data set. To prove the reliability of the proposed method in practical biomedical applications, we further demonstrate holographic imaging of red blood cells flowing in a cluster and diverse types of tissue sections presented without any ground truth data. Our results suggest that the physics-informed unsupervised approach effectively extends the adaptability of deep learning methods, and therefore, has great potential for solving a wide range of inverse problems in optical imaging techniques.  
 <p align = "center">
-<img src="/image/simple_scheme.png" width="900" height="300">
+<img src="/image/simple_scheme.png" width="900" height="330">
 </p>
 
 # System Requirements
@@ -61,6 +61,7 @@ Intermediate training results are saved in './RESULT_ROOT/mnist_MODE_NUM_DEPTH/'
 Test model with **MNIST** dataset. Complex amplitude of the sample reconstructed from single hologram intensity measurement can be compared with ground truth. User can train the network from scartch or download trained network parameters from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). After downloading (mnist_complex_amplitude_5depth, mnist_amplitude_5depth or mnist_phase_5depth), put downloaded folder to **./model_parameters** folder.
 
 ### Test with MNIST
+**UPDATED SOON**
 data_name: mnist
 ```
 python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH --mode complex_amplitude
@@ -78,22 +79,25 @@ python result./result_fig2.py
 Running time(CPU): 5s
 
 ### Demonstration of adaptive holographic imaging
-The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. As the proposed model parameterized the physical degree of freedom (i.e. distance), the proposed model can handle the out-of-distribution data(i.e. hologram intensities measured at different distances). Complex amplitude of polystyrene microsphere reconstructed from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Run the following command.  
+The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. As the proposed model parameterized the physical degree of freedom (i.e. distance), the out-of-distribution data(i.e. hologram intensities measured at different distances) can be handled. Complex amplitude of polystyrene microsphere reconstructed from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Run the following command.  
 ```
 python result./result_fig3.py
 ```
 Running time(CPU): 15s
 
 ### Demonstration of holographic imaging of RBCs in a dynamic environment
-
+To demonstrate the practicality of the proposed method, a series of hologram intensities of red blood cells that drift along the slide glass is measured and used as network input. 5 intermediate frames of input hologram intensities and the corresponding reconstructed complex amplitude are presented. Run the following command.
 ```
 python result./result_fig4.py
 ```
 Running time(CPU): 5s
 
 ### Holographic imaging of histology slides without ground truth
-Here we assumed that acquiring paired data between complex amplitude and hologram intensity are impossible. Complex amplitude of appendix and colon reconstructed from three different methods -CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Notably, supervised method -U-Net- is omitted as paired data is unrechable. Run the following command.  
+Here we assumed that acquiring paired data between complex amplitude and hologram intensity are not accessible. In this situation, complex amplitude of appendix and colon reconstructed from three different methods -CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Notably, supervised method -U-Net- is omitted as paired data is not accessible. Run the following command.  
 ```
 python result./result_fig5.py
 ```
 Running time(CPU): 15s
+
+# Result
+
