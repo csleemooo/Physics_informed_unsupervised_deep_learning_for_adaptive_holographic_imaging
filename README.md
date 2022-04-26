@@ -66,30 +66,34 @@ data_name: mnist
 python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH --mode complex_amplitude
 ```
 
-## Reproduce
-Here, user can reproduce the reported results from Fig 2 to Fig 5 using below commands.  
-Also, trained parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download folders and put them to **./model_parameters** folder.  
+# Reproduce
+Here, user can reproduce the reported results from Fig 2 to Fig 5 by following instructions.  
+Also, trained network parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download folders and put them to **./model_parameters** folder.  
 
 ### Demonstration of simultaneous reconstruction of complex amplitude and object distance
+Here, simultaneous reconstruction of complex amplitude and distance range from single hologram intensity measurement is demonstrated. By integrating parameterized forward model with CycleGAN architecture, the proposed method can successfully reconstruct complex amplitude and object distance. Run the following command.  
 ```
 python result./result_fig2.py
 ```
-Inference time(CPU): 5s
+Running time(CPU): 5s
 
 ### Demonstration of adaptive holographic imaging
+Reconstructed complex amplitude of polystyrene microsphere from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and ground truth images are compared. The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. This situation  Run the following command.  
 ```
 python result./result_fig3.py
 ```
-Inference time(CPU): 15s
+Running time(CPU): 15s
 
 ### Demonstration of holographic imaging of RBCs in a dynamic environment
+
 ```
 python result./result_fig4.py
 ```
-Inference time(CPU): 5s
+Running time(CPU): 5s
 
 ### Holographic imaging of histology slides without ground truth
+Reconstructed complex amplitude of appendix and colon from three different methods -CycleGAN, PhaseGAN, and the proposed- and ground truth images are compared. Notably, supervised method -U-Net- is omitted by assuming that acquiring paired data between complex amplitude and hologram intensity are unrechable. Run the following commands.  
 ```
 python result./result_fig5.py
 ```
-Inference time(CPU): 15s
+Running time(CPU): 15s
