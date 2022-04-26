@@ -20,6 +20,7 @@ The following libraries are necessary for running the codes.
 - numpy
 - PIL
 - matplotlib
+- scipy
 
 Please install requirements using below command.
 ```
