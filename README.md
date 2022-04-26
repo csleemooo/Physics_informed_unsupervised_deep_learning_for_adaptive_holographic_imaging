@@ -78,7 +78,7 @@ python result./result_fig2.py
 Running time(CPU): 5s
 
 ### Demonstration of adaptive holographic imaging
-The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. As the proposed model parameterized the physical degree of freedom (i.e. distance), more robust reconstruction results can be observed. Complex amplitude of polystyrene microsphere reconstructed from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Run the following command.  
+The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. As the proposed model parameterized the physical degree of freedom (i.e. distance), the proposed model can handle the out-of-distribution data(i.e. hologram intensities measured at different distances). Complex amplitude of polystyrene microsphere reconstructed from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Run the following command.  
 ```
 python result./result_fig3.py
 ```
