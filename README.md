@@ -16,6 +16,7 @@ git clone https://github.com/csleemooo/Physics_informed_unsupervised_deep_learni
 The following libraries are necessary for running the codes.
 - Python >= 3.7
 - Pytorch >= 1.10.2
+- phasepack == 1.5
 - numpy
 - PIL
 - matplotlib
