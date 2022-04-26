@@ -48,12 +48,12 @@ Training models with 20000 iterations took up to 4 hours on a computer with 32 G
 ### Example of training result
 Intermediate training results are saved in './RESULT_ROOT/mnist_MODE_NUM_DEPTH/'. Example images are as follows. 
 
-| ![iter100.png](/images/iter100.png)|![iter5000.png](/images/iter5000.png)|  
+| ![iter100.png](/image/iter100.png)|![iter5000.png](/image/iter5000.png)|  
 |:--:|:--:|
 | *Iteration 100* | *Iteration 5000* |  
 
 
-| ![iter10000.png](/images/iter10000.png)|![iter100.png](/images/iter100.png)|
+| ![iter10000.png](/image/iter10000.png)|![iter100.png](/image/iter100.png)|
 |:--:|:--:|
 | *Iteration 10000* | *Iteration 20000* | 
 
