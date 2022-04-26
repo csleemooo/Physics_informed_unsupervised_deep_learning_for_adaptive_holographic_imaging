@@ -55,7 +55,7 @@ Intermediate training results are saved in './RESULT_ROOT/mnist_MODE_NUM_DEPTH/'
 
   
 ## Testing
-Test model with **MNIST** dataset. Complex amplitude of the sample reconstructed from single hologram intensity measurement can be compared with ground truth.  
+Test model with **MNIST** dataset. Complex amplitude of the sample reconstructed from single hologram intensity measurement can be compared with ground truth. User can train the network from scartch or download network parameters from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). After downloading (e.g. mnist_complex_amplitude_5depth), put downloaded folder to **./model_parameters** folder.
 
 ### Test with MNIST
 data_name: mnist
@@ -67,10 +67,26 @@ python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH --mode 
 Below commands reproduce the reported results from Fig 2 to Fig 5. 
 Trained parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download .pth files and put them to **./model_parameters** folder 
 
-### Test with experimental dataset
-data_name: polystyrene_bead (num_depth: 1 or 6), tissue_array, or red_blood_cell
-```
-python test.py --data_name polystyrene_bead --num_depth 6 --result_root RESULT_PATH
-python test.py --data_name tissue_array --result_root RESULT_PATH
-```
+### Demonstration of simultaneous reconstruction of complex amplitude and object distance
+'''
+python result./result_fig2.py
+'''
+Inference time: 5s
 
+### Demonstration of adaptive holographic imaging
+'''
+python result./result_fig3.py
+'''
+Inference time: 15s
+
+### Demonstration of holographic imaging of RBCs in a dynamic environment
+'''
+python result./result_fig4.py
+'''
+Inference time: 5s
+
+### Holographic imaging of histology slides without ground truth
+'''
+python result./result_fig5.py
+'''
+Inference time: 15s
