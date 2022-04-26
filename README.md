@@ -58,7 +58,7 @@ Intermediate training results are saved in './RESULT_ROOT/mnist_MODE_NUM_DEPTH/'
 
   
 ## Testing
-Test model with **MNIST** dataset. Complex amplitude of the sample reconstructed from single hologram intensity measurement can be compared with ground truth. User can train the network from scartch or download network parameters from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). After downloading (e.g. mnist_complex_amplitude_5depth), put downloaded folder to **./model_parameters** folder.
+Test model with **MNIST** dataset. Complex amplitude of the sample reconstructed from single hologram intensity measurement can be compared with ground truth. User can train the network from scartch or download network parameters from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). After downloading (mnist_complex_amplitude_5depth, mnist_amplitude_5depth or mnist_phase_5depth), put downloaded folder to **./model_parameters** folder.
 
 ### Test with MNIST
 data_name: mnist
@@ -67,8 +67,8 @@ python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH --mode 
 ```
 
 ## Reproduce
-Below commands reproduce the reported results from Fig 2 to Fig 5. 
-Trained parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download .pth files and put them to **./model_parameters** folder 
+Here, user can reproduce the reported results from Fig 2 to Fig 5 using below commands.  
+Also, trained parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download folders and put them to **./model_parameters** folder.  
 
 ### Demonstration of simultaneous reconstruction of complex amplitude and object distance
 ```
