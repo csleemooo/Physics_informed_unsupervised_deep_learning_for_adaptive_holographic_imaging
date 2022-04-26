@@ -72,22 +72,22 @@ Trained parameters used in this study can be downloaded from [here](https://driv
 ```
 python result./result_fig2.py
 ```
-Inference time: 5s
+Inference time(CPU): 5s
 
 ### Demonstration of adaptive holographic imaging
 ```
 python result./result_fig3.py
 ```
-Inference time: 15s
+Inference time(CPU): 15s
 
 ### Demonstration of holographic imaging of RBCs in a dynamic environment
 ```
 python result./result_fig4.py
 ```
-Inference time: 5s
+Inference time(CPU): 5s
 
 ### Holographic imaging of histology slides without ground truth
 ```
 python result./result_fig5.py
 ```
-Inference time: 15s
+Inference time(CPU): 15s
