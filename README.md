@@ -54,8 +54,8 @@ Intermediate training results are saved in './RESULT_ROOT/mnist_MODE_NUM_DEPTH/'
 
   
 ## Testing
-Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset. Reconstructed complex amplitude of the sample from single hologram intensity measurement can be compared with ground truth.  
-Also, trained parameters used in this study can be downloaded from https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.  
+Test model with **MNIST**, **Polystyrene microsphere**, **Tissue**, and **Red blood cell** dataset. Complex amplitude of the sample reconstructed from single hologram intensity measurement can be compared with ground truth.  
+Also, trained parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.) 
 
 ### Test with MNIST
 data_name: mnist
