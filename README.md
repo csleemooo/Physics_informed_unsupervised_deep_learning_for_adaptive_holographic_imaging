@@ -64,6 +64,9 @@ data_name: mnist
 python test.py --data_name mnist --num_depth 5 --result_root RESULT_PATH --mode complex_amplitude
 ```
 
+## Reproduce
+Below commands reproduce the reported results from Fig 2 to Fig 5.
+
 ### Test with experimental dataset
 data_name: polystyrene_bead (num_depth: 1 or 6), tissue_array, or red_blood_cell
 ```
@@ -71,5 +74,3 @@ python test.py --data_name polystyrene_bead --num_depth 6 --result_root RESULT_P
 python test.py --data_name tissue_array --result_root RESULT_PATH
 ```
 
-## Reproduce
-Below commands reproduce the reported results.
