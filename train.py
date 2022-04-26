@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     if args.data_name == 'polystyrene_bead':
         args.distance_min, args.distance_max=6, 18
-
+        args.phase_normalize = 2 * pi
         if args.num_depth == 6:
             train_holo_list = list(range(7,18,2))
         else:
@@ -38,6 +38,7 @@ if __name__ == '__main__':
 
     elif args.data_name == 'tissue_array':
         args.distance_min, args.distance_max = 10, 28
+        args.phase_normalize = 2 * pi
         train_holo_list = [19]
         test_holo_list = list(range(12, 28, 2))
 
@@ -147,17 +148,17 @@ if __name__ == '__main__':
 
             if args.mode == 'phase':
                 real_phase = F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device)*args.phase_normalize
-                real_amplitude = torch.ones_like(gt_batch).to(device)*0.6
+                real_amplitude = torch.ones_like(real_phase).to(device)*0.6
 
                 holo_phase = F.pad(holo_batch, (56, 56, 56, 56), 'constant', 0).to(device)
-                holo_amplitude = torch.ones_like(holo_batch).to(device)*0.6
+                holo_amplitude = torch.ones_like(holo_phase).to(device)*0.6
 
             elif args.mode == 'amplitude':
-                real_phase = torch.zeros_like(gt_batch).to(device)*args.phase_normalize
-                real_amplitude = (1-F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device))*0.6
+                real_amplitude = (1 - F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device)) * 0.6
+                real_phase = torch.zeros_like(real_amplitude).to(device)*args.phase_normalize
 
-                holo_phase = torch.zeros_like(holo_batch).to(device)
-                holo_amplitude = (1-F.pad(holo_batch, (56, 56, 56, 56), 'constant', 0).to(device))*0.6
+                holo_amplitude = (1 - F.pad(holo_batch, (56, 56, 56, 56), 'constant', 0).to(device)) * 0.6
+                holo_phase = torch.zeros_like(holo_amplitude).to(device)
 
             elif args.mode == 'complex_amplitude':
                 real_phase = F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device)*args.phase_normalize
@@ -271,11 +272,11 @@ if __name__ == '__main__':
 
                     if args.mode == 'phase':
                         real_phase = F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device)
-                        real_amplitude = torch.ones_like(gt_batch).to(device) * 0.6
+                        real_amplitude = torch.ones_like(real_phase).to(device) * 0.6
 
                     elif args.mode == 'amplitude':
-                        real_phase = torch.zeros_like(gt_batch).to(device)
                         real_amplitude = (1 - F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device)) * 0.6
+                        real_phase = torch.zeros_like(real_amplitude).to(device)
 
                     elif args.mode == 'complex_amplitude':
                         real_phase = F.pad(gt_batch, (56, 56, 56, 56), 'constant', 0).to(device)
