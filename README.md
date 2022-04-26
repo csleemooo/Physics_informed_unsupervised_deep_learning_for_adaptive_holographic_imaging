@@ -71,14 +71,14 @@ Here, user can reproduce the reported results from Fig 2 to Fig 5 by following i
 Also, trained network parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download folders and put them to **./model_parameters** folder.  
 
 ### Demonstration of simultaneous reconstruction of complex amplitude and object distance
-Here, simultaneous reconstruction of complex amplitude and distance range from single hologram intensity measurement is demonstrated. By integrating parameterized forward model with CycleGAN architecture, the proposed method can successfully reconstruct complex amplitude and object distance. Run the following command.  
+Here, simultaneous reconstruction of complex amplitude and distance range from single hologram intensity measurement is demonstrated. By integrating parameterized forward model with CycleGAN architecture, the proposed method can successfully reconstruct complex amplitude and object distance simultaneously. Run the following command.  
 ```
 python result./result_fig2.py
 ```
 Running time(CPU): 5s
 
 ### Demonstration of adaptive holographic imaging
-Reconstructed complex amplitude of polystyrene microsphere from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and ground truth images are compared. The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. This situation  Run the following command.  
+The networks were trained in the situation where only single-dpeth hologram intensity measurements can be acquired. As the proposed model parameterized the physical degree of freedom (i.e. distance), more robust reconstruction results can be observed. Complex amplitude of polystyrene microsphere reconstructed from four different methods -U-Net, CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Run the following command.  
 ```
 python result./result_fig3.py
 ```
@@ -92,7 +92,7 @@ python result./result_fig4.py
 Running time(CPU): 5s
 
 ### Holographic imaging of histology slides without ground truth
-Reconstructed complex amplitude of appendix and colon from three different methods -CycleGAN, PhaseGAN, and the proposed- and ground truth images are compared. Notably, supervised method -U-Net- is omitted by assuming that acquiring paired data between complex amplitude and hologram intensity are unrechable. Run the following commands.  
+Here we assumed that acquiring paired data between complex amplitude and hologram intensity are impossible. Complex amplitude of appendix and colon reconstructed from three different methods -CycleGAN, PhaseGAN, and the proposed- and corresponding ground truth images are compared. Notably, supervised method -U-Net- is omitted as paired data is unrechable. Run the following command.  
 ```
 python result./result_fig5.py
 ```
