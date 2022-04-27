@@ -5,3 +5,4 @@ matplotlib==3.5.1
 PIL==8.4.0
 phasepack==1.5
 scipy==1.7.3
+scikit-image==0.19.2
