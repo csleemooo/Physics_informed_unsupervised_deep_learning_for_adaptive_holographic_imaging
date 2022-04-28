@@ -114,6 +114,3 @@ Here we assumed that acquiring paired data between complex amplitude and hologra
 python result./result_fig5.py
 ```
 Running time(CPU): 15s
-
-# Result
-
