@@ -69,9 +69,21 @@ From MNIST dataset, 1000 amplitude and phase images are randomly sampled. These 
 - data_name: mnist
 ```
 python test.py --data_name mnist --model_root MODEL_PARAMETER_PATH --test_result_root TEST_RESULT_PATH --mode complex_amplitude
-```
+```  
+### Example of test result  
+#### Loss plot  
+| ![Loss.png](/image/Loss.png) | 
+|:--:|
+| Training Loss |
 
+#### Quantitative analysis of complex amplitude and distance prediction results  
+| ![Image_metric.png](/image/Image_metric.png) | ![distance_test_errorbar.png](/image/distance_test_errorbar.png) | 
+|:--:|:--:|
+| Image reconstruction evaluation | Distance prediction evaluation |  
 
+#### Example of complex amplitude reconstruction  
+| ![test11.png](/image/test11.png) | ![test91.png](/image/test91.png) | 
+  
 # Reproduce
 Here, user can reproduce the reported results from Fig 2 to Fig 5 by following instructions.  
 Also, trained network parameters used in this study can be downloaded from [here](https://drive.google.com/drive/folders/1Y6R8plKylzHNT4wkBEA4GeOreY9id1xm?usp=sharing.). Download folders and put them to **./model_parameters** folder.  
