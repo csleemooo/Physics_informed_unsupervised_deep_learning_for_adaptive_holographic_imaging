@@ -70,6 +70,8 @@ From MNIST dataset, 1000 amplitude and phase images are randomly sampled. These 
 ```
 python test.py --data_name mnist --model_root MODEL_PARAMETER_PATH --test_result_root TEST_RESULT_PATH --mode complex_amplitude
 ```  
+Testing models take around 5~6 minutes.
+
 ### Example of test result  
 #### Loss plot and Quantitative evaluation of reconstruction 
 | ![Loss.png](/image/Loss.png) | ![Image_metric.png](/image/Image_metric.png) | ![distance_test_errorbar.png](/image/distance_test_errorbar.png) |
