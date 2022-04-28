@@ -71,18 +71,15 @@ From MNIST dataset, 1000 amplitude and phase images are randomly sampled. These 
 python test.py --data_name mnist --model_root MODEL_PARAMETER_PATH --test_result_root TEST_RESULT_PATH --mode complex_amplitude
 ```  
 ### Example of test result  
-#### Loss plot  
-| ![Loss.png](/image/Loss.png) | 
-|:--:|
-| Training Loss |
-
-#### Quantitative analysis of complex amplitude and distance prediction results  
-| ![Image_metric.png](/image/Image_metric.png) | ![distance_test_errorbar.png](/image/distance_test_errorbar.png) | 
-|:--:|:--:|
-| Image reconstruction evaluation | Distance prediction evaluation |  
+#### Loss plot and Quantitative evaluation of reconstruction 
+| ![Loss.png](/image/Loss.png) | ![Image_metric.png](/image/Image_metric.png) | ![distance_test_errorbar.png](/image/distance_test_errorbar.png) |
+|:--:|:--:|:--:|
+| Training Loss |Image reconstruction evaluation | Distance prediction evaluation |  
 
 #### Example of complex amplitude reconstruction  
-| ![test11.png](/image/test11.png) | ![test91.png](/image/test91.png) | 
+| ![test11.png](/image/test11.png) | ![test91.png](/image/test91.png) |
+|:--:|:--:|
+| Test1 | Test2 |
   
 # Reproduce
 Here, user can reproduce the reported results from Fig 2 to Fig 5 by following instructions.  
